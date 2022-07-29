@@ -1,8 +1,13 @@
 import React from "react"
 
-const Board=(props)=>{
+import {Cell} from "../Components"
+
+const Board=({status, ...props})=>{
   return(
-    <h1>Board</h1>
+    <>
+      <h1>Board</h1>
+      <Cell/>
+    </>
   )
 }
 

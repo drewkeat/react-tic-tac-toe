@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Board from "../Components/Board"
+import {Board} from "../Components"
 
 class Main extends Component {
   state={
@@ -20,7 +20,9 @@ class Main extends Component {
   
   render() {
     return(
-      <Board />
+      <>
+        <Board status={board}/>
+      </>
     )
   }
 }
