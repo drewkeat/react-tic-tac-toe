@@ -1,12 +1,11 @@
 import React from "react"
 
-import Cell from "./Cell"
+import {Cell} from "../Components"
 
 const Board=({status, ...props})=>{
   return(
     <>
       <h1>Board</h1>
-      {status}
       <Cell/>
     </>
   )
