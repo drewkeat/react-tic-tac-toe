@@ -7,7 +7,7 @@ class Main extends Component {
     turn: "",
     board: {
       1: null,
-      2: null,
+      2: "passed",
       3: null,
       4: null,
       5: null,
@@ -21,7 +21,7 @@ class Main extends Component {
   render() {
     return(
       <>
-        <Board status={board}/>
+        <Board status={this.state.board[2]}/>
       </>
     )
   }
